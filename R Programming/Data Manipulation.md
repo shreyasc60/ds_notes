@@ -11,3 +11,13 @@ df |> arrange(-y) # arranges y in desc order
 # OR
 df |> arrange(desc(y)) # arranges y in desc order
 ```
+
+Output:
+```
+  x   y
+1 5 9.9
+2 2 2.3
+3 3 1.4
+4 1 0.0
+5 4 0.0
+```
