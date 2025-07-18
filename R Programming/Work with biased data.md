@@ -1,0 +1,25 @@
+Every data analyst will encounter bias at some point in the data analysis process. Avoiding biased data is crucial to making objective insights, following correct legal guidelines, honoring ethical considerations, and avoiding potential loss of credibility. As a data professional, you will need to take the time to understand how to identify and manage biased data whenever possible.
+
+You explored bias earlier in this program. In this reading, you will read about an example of an analyst who performed data analysis, discovered bias in their data, and used R to address the bias.
+
+## Address biased data with R
+
+R programming offers a diverse toolkit for addressing data bias in various domains. R's libraries allow for the application of oversampling techniques to ensure equitable representation. R programming provides a rich set of functions and methods to tackle data bias effectively. Working with biased data can waste time and resources, as the analysis may need to be redone when bias is discovered. Resolving bias also enhances the trust and credibility of your analysis, models, and the decisions made based on them. By addressing bias with R, you can enhance the quality and reliability of your data analysis, machine learning, and decision-making processes.
+
+## Examples of using R to address bias  
+
+This first scenario was shared by a quantitative analyst who collects data from people all over the world. They explain how they discovered bias in their data and how they used R to address it:
+
+“I work on a team that collects survey-like data for a start-up software company. One of our team’s tasks is called a comparative analysis. A comparative analysis is a side-by-side comparison that identifies the similarities and contrasts between two or more items. An example of this might be a clothing manufacturer wanting to compare the features of two or more uniform designs to determine their impact on sales and identify areas for improvement. The analysis aims to provide detailed insights into each feature and leverage historical data for meaningful comparisons.
+
+For our software company, our comparative analysis was showing a group of users with three ads side-by-side for the same mobile app design. After viewing the ads, we had the users complete a survey to determine their preferences. We asked several questions about the ads including recalling the key messages, organization of navigational elements, aesthetics, any prompts to take action with the mobile app, relevance to social media, etc. In this specific case, after many iterations, we were seeing consistent bias in favor of the ad viewed first, even when switching the placement of the ads.
+
+We decided to add randomization to the position of the ads using R. We wanted to make sure that the ads with similar frequencies were near each other and to eliminate as much bias as possible. We used sample() to inject a randomization element into our R programming. In R, the sample() function allows you to take a random sample of elements from a data set. Adding this piece of code randomly shuffled the rows in our data. We presented the ads to users again, and this time, the position of the ads was random and controlled for bias. Less bias meant that the survey was more effective because the data was more reliable.”
+
+In another instance of the data analysis process focusing on furniture sales, a significant issue arose when the dataset contained biased information related to the geographic representation of sales data. Certain regions were overrepresented, leading to skewed conclusions about popular furniture items. To address this bias, the furniture team employed statistical techniques to rebalance the dataset, oversampling underrepresented regions, and undersampling the overrepresented ones with R programming. The team employed the SMOTE (Synthetic Minority Oversampling Technique) for oversampling underrepresented regions and the NearMiss algorithm for undersampling overrepresented regions. Bootstrapping and k-nearest neighbor are used by the SMOTE function to generate further observations of the bias through oversampling. You can learn more about SMOTE by reading [the CRAN documentation](https://search.r-project.org/CRAN/refmans/performanceEstimation/html/smote.html) about it. You can also find [CRAN documentation for NearMiss](https://search.r-project.org/CRAN/refmans/themis/html/nearmiss.html).
+
+By rectifying this bias with R programming, the analysis discovered more accurate insights into the furniture market, enabling the company to make more effective decisions and optimize its product offerings for a broader customer base.
+
+## Key takeaways
+
+R equips analysts with the ability to address data bias across various domains to ensure equitable representation, enhance trust, and instill credibility in the decision-making process, all while avoiding resource waste. The sample(), SMOTE, and NearMiss algorithms are just a handful of the many functions and methods in R that you can use to address bias in your data.
