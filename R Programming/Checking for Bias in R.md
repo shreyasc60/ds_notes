@@ -27,4 +27,4 @@ A bias value closer to 0, or a lower bias values means that our model is accurat
 
 #### The bias() function
 
-Basically the bias function finds the average amount that the actual outcome is greater than the predicted outcome
+Basically the bias function finds the average amount that the actual outcome is greater than the predicted outcome.
