@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "R Programming/Faceting in R.md",
+                "file": "R Programming/Useful Functions in R.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Faceting in R"
+              "title": "Useful Functions in R"
             }
           }
         ]
@@ -179,16 +179,17 @@
   },
   "active": "91459973037638e3",
   "lastOpenFiles": [
-    "R Programming/Smoothing in R.md",
+    "R Programming/Anscombe's Quartet.md",
+    "R Programming/Checking for Bias in R.md",
+    "R Programming/Useful Functions in R.md",
     "R Programming/Faceting in R.md",
+    "R Programming/Smoothing in R.md",
     "R Programming/Data Visualization in R.md",
     "R Programming/Data Manipulation.md",
     "R Programming/Work with biased data.md",
-    "R Programming/Checking for Bias in R.md",
     "R Programming/Data Transformations in R.md",
     "R Programming/Data Cleaning in R.md",
     "R Programming/Whole game of Data Science.md",
-    "R Programming/Anscombe's Quartet.md",
     "R Programming/anscombes_quartet.png",
     "CRISP-DM.md",
     "R Programming/R Basics.md",
