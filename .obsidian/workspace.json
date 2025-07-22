@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "R Programming/Useful Functions in R.md",
+                "file": "R Programming/Labels and annotation in R.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful Functions in R"
+              "title": "Labels and annotation in R"
             }
           }
         ]
@@ -179,9 +179,10 @@
   },
   "active": "91459973037638e3",
   "lastOpenFiles": [
+    "R Programming/Useful Functions in R.md",
+    "R Programming/Labels and annotation in R.md",
     "R Programming/Anscombe's Quartet.md",
     "R Programming/Checking for Bias in R.md",
-    "R Programming/Useful Functions in R.md",
     "R Programming/Faceting in R.md",
     "R Programming/Smoothing in R.md",
     "R Programming/Data Visualization in R.md",
