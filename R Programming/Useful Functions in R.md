@@ -6,3 +6,5 @@ __________________________________________________________________________
 5. utils::head() - View the first n rows of your data (default value = 6)
 6. utils::View() - Invoke a spreadsheet-style data viewer on a matrix-like R object
 7. p + ggplot2::geom_jitter(): The analyst could use the geom_jitter() function to make the points easier to find. The geom_jitter() function adds a small amount of random noise to each point in the plot, which helps deal with the overlapping of pointsS
+8. janitor::clean_names(): automatically clean all column names to a consistent format
+9. janitor::remove_constant(): automatically remove all columns which have a constant value (e.g "NA")
