@@ -17,3 +17,15 @@ There are various implementations of python:
 
 [CPython](http://www.python.org) is the reference implementation of Python, written in C. It compiles Python code to intermediate bytecode which is then interpreted by a virtual machine. CPython provides the highest level of compatibility with Python packages and C extension modules.
 
+Python is a Dynamically typed language, meaning that the data types of the variable are assigned on runtime, and are based off the type of data the variable hold. Data types of variables don't have to be explicitly mentioned while initialization.
+
+## Modules
+
+You can import modules using the ```import ``` or ```from ... import``` statement.
+
+As soon as you use import statements, you use modules. These can be either built-in modules such as *os* and *sys*, third-party modules you have installed in your environment, or your project’s internal modules.
+
+Built-in modules:
+1. os
+2. sys
+
