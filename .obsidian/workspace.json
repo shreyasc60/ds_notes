@@ -141,12 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Python Programming/Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Introduction"
             }
           },
           {
