@@ -29,3 +29,49 @@ Built-in modules:
 1. os
 2. sys
 
+Don’t namespace with underscores; use submodules instead.
+
+```
+# OK
+import library.plugin.foo
+# not OK
+import library.foo_plugin
+```
+
+To keep in line with the style guide, keep module names short, lowercase, and be sure to avoid using special symbols like the dot (.) or question mark (?). A file name like `my.spam.py` is the one you should avoid! Naming this way will interfere with the way Python looks for modules. In the case of my.spam.py Python expects to find a `spam.py` file in a folder named `my` which is not the case.
+
+An `import modu` statement will look for the proper file, which is `modu.py` in the same directory as the caller, if it exists. If it is not found, the Python interpreter will search for `modu.py` in the “path” recursively and raise an ImportError exception when it is not found.
+
+When `modu.py` is found, the Python interpreter will ***execute the module in an isolated scope***. Any top-level statement in `modu.py` will be executed, including other imports if any. Function and class definitions are stored in the module’s dictionary.
+
+Then, the module’s variables, functions, and classes will be available to the caller through the module’s namespace, a central concept in programming that is particularly helpful and powerful in Python.
+
+In many languages, an `include file` directive is used by the preprocessor to take all code found in the file and ‘copy’ it into the caller’s code. It is different in Python: the included code is isolated in a module namespace, which means that you generally don’t have to worry that the included code could have unwanted effects, e.g. override an existing function with the same name.
+
+It is possible to simulate the more standard behavior by using a special syntax of the import statement: `from modu import *`. This is generally considered bad practice. **Using** `import *` **makes the code harder to read and makes dependencies less compartmentalized**.
+
+Using `from modu import func` is a way to pinpoint the function you want to import and put it in the local namespace. While much less harmful than `import *` because it shows explicitly what is imported in the local namespace, its only advantage over a simpler `import modu` is that it will save a little typing.
+
+```
+# Very bad
+
+[...]
+from modu import *
+[...]
+x = sqrt(4)  # Is sqrt part of modu? A builtin? Defined above?
+
+# Better
+
+from modu import sqrt
+[...]
+x = sqrt(4)  # sqrt may be part of modu, if not redefined in between
+
+# Best
+
+import modu
+[...]
+```
+
+
+
+
